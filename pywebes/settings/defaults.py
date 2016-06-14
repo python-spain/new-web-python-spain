@@ -86,7 +86,9 @@ TEMPLATES = [
                 'django.core.context_processors.tz',
                 'sekizai.context_processors.sekizai',
                 'django.core.context_processors.static',
-                'cms.context_processors.cms_settings'
+                'cms.context_processors.cms_settings',
+
+                'cms_bs3_theme.context_processors.settings',
             ],
             'loaders': [
                 'django.template.loaders.filesystem.Loader',
@@ -138,7 +140,9 @@ INSTALLED_APPS = [
     'djangocms_teaser',
     'djangocms_video',
     'reversion',
-    'pywebes'
+    'pywebes',
+
+    'cms_bs3_theme',
 ]
 
 LANGUAGES = (
@@ -164,12 +168,26 @@ CMS_LANGUAGES = {
     },
 }
 
+
+# CMS_TEMPLATES = (
+#     ## Customize this
+#     ('fullwidth.html', 'Fullwidth'),
+#     ('sidebar_left.html', 'Sidebar Left'),
+#     ('sidebar_right.html', 'Sidebar Right')
+# )
+
 CMS_TEMPLATES = (
-    ## Customize this
-    ('fullwidth.html', 'Fullwidth'),
-    ('sidebar_left.html', 'Sidebar Left'),
-    ('sidebar_right.html', 'Sidebar Right')
+    # ('cms_bs3_theme/page.html', 'BS3 Page'),
+    ('cms_bs3_theme/fullwidth.html', 'BS3 Fullwidth'),
+    ('cms_bs3_theme/sidebar_right.html', 'BS3 Sidebar Right'),
+    ('cms_bs3_theme/sidebar_left.html', 'BS3 Sidebar Left'),
+    ('cms_bs3_theme/feature.html', 'BS3 Feature'),
+    ('cms_bs3_theme/landscape.html', 'BS3 Landscape'),
+    ('nekmocom/home.html', 'BS3 Home'),
+    ('sidebar_right.html', 'NekTheme Sidebar right'),
 )
+
+ALDRYN_BOILERPLATE_NAME = 'bootstrap3'
 
 CMS_PERMISSION = True
 
@@ -190,3 +208,8 @@ DATABASES = {
 MIGRATION_MODULES = {
     
 }
+
+BOOTSTRAP3_THEME = 'sandstone'
+BOOTSTRAP3_COLS = 12
+BOOTSTRAP3_SIDEBAR_COLS = 4
+BOOTSTRAP3_MENU_TEMPLATE = 'cms_bs3_theme/menus/fluid-static-top-default.html'

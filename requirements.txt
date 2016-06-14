@@ -21,6 +21,7 @@ html5lib
 Pillow>=2.3
 django-sekizai>=0.7
 six
+jsonfield
 
 -e git+git@github.com:Nekmo/djangocms-bs3-theme.git@master#egg=djangocms_bs3_theme-master
 -e git+git@github.com:Nekmo/djangocms-comments.git@master#egg=project_name-master
