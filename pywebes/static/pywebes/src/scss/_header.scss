@@ -1,0 +1,37 @@
+
+@import "variables";
+
+#header {
+    padding-top: $home-header-padding;
+    padding-bottom: $home-header-padding;
+    background: $header-background;
+
+    #name-slogan {
+
+        #logo {
+            width: $home-logo-size;
+            height: $home-logo-size;
+            background: url(../img/logo.png);
+            background-size: $home-logo-size $home-logo-size;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        #name {
+            font-family: $header-title-font-family;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: $home-title-size;
+            color: $header-title-color;
+        }
+
+        #subtitle {
+            margin-left: $home-logo-size;
+            color: $header-subtitle-color;
+            font-size: $home-subtitle-size;
+            font-family: $header-subtitle-font-family;
+            margin-top: $home-subtitle-margin-top;
+            display: inline-block;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{% extends "pywebes/base.html" %}
+{% load static i18n cms_tags %}
+
+
+{% block bs3_theme_css %}
+    {% if bs3_conf.BOOTSTRAP3_FORCE_SRC %}
+        <link rel="stylesheet" href="{% static 'pywebes/src/css/pywebes.css' %}">
+    {% else %}
+        <link rel="stylesheet" href="{% static 'pywebes/dist/css/pywebes.css' %}">
+    {% endif %}
+{% endblock %}

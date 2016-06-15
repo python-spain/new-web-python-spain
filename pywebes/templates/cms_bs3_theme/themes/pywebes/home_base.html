@@ -1,0 +1,38 @@
+{% bs3_extends "cms_bs3_theme/base_theme.html" %}
+{% load i18n cms_tags static %}
+
+
+{% block header %}
+    <div id="header">
+        <div class="container">
+            <div id="headline">
+                <div id="name-slogan">
+                    <div id="logo"></div>
+                    <h1 id="name">Python España</h1>
+                    <p class="hidden-xs hidden-sm">
+                        <span id="subtitle">
+                            Asociación de usuarios del lenguaje de programación
+                        </span>
+                    </p>
+                </div>
+            </div>
+            {% comment %}
+            <div id="search" class="pull-right">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="{% trans 'Comenzar a buscar...' %}"
+                           aria-describedby="basic-addon1">
+                    <span class="input-group-addon" id="basic-addon1">
+                        <span class="mdi mdi-magnify"></span>
+                    </span>
+                </div>
+            </div>
+            {% endcomment %}
+            <div id="social">
+                {% block social %}
+                    {% static_placeholder "social" %}
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+    {# {% include bs3_conf.BOOTSTRAP3_MENU_TEMPLATE %} #}
+{% endblock %}

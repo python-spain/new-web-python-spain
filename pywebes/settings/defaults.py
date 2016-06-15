@@ -183,7 +183,7 @@ CMS_TEMPLATES = (
     ('cms_bs3_theme/sidebar_left.html', 'BS3 Sidebar Left'),
     ('cms_bs3_theme/feature.html', 'BS3 Feature'),
     ('cms_bs3_theme/landscape.html', 'BS3 Landscape'),
-    ('nekmocom/home.html', 'BS3 Home'),
+    ('pywebes/home.html', 'BS3 Home'),
     ('sidebar_right.html', 'NekTheme Sidebar right'),
 )
 
@@ -209,7 +209,7 @@ MIGRATION_MODULES = {
     
 }
 
-BOOTSTRAP3_THEME = 'sandstone'
+BOOTSTRAP3_THEME = 'pywebes'
 BOOTSTRAP3_COLS = 12
 BOOTSTRAP3_SIDEBAR_COLS = 4
 BOOTSTRAP3_MENU_TEMPLATE = 'cms_bs3_theme/menus/fluid-static-top-default.html'
