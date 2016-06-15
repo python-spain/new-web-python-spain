@@ -1,37 +1,60 @@
 
 @import "variables";
+@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/variables";
 
 #header {
     padding-top: $home-header-padding;
     padding-bottom: $home-header-padding;
     background: $header-background;
 
-    #name-slogan {
+    #headline {
+        display: inline-block;
+        vertical-align: middle;
 
-        #logo {
-            width: $home-logo-size;
-            height: $home-logo-size;
-            background: url(../img/logo.png);
-            background-size: $home-logo-size $home-logo-size;
-            display: inline-block;
-            vertical-align: middle;
+        #name-slogan {
+
+            #logo {
+                width: $home-logo-size;
+                height: $home-logo-size;
+                background: url(../img/logo.png);
+                background-size: $home-logo-size $home-logo-size;
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            #name {
+                font-family: $header-title-font-family;
+                display: inline-block;
+                vertical-align: middle;
+                font-size: $home-title-size;
+                color: $header-title-color;
+            }
+
+            #subtitle {
+                margin-left: $home-logo-size;
+                color: $header-subtitle-color;
+                font-size: $home-subtitle-size;
+                font-family: $header-subtitle-font-family;
+                margin-top: $home-subtitle-margin-top;
+                display: inline-block;
+            }
+        }
+    }
+
+    #right-header {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: $home-right-buttons-line-height;
+
+        button {
+            margin-right: $home-right-buttons-margin;
+            margin-left: $home-right-buttons-margin;
         }
 
-        #name {
-            font-family: $header-title-font-family;
-            display: inline-block;
-            vertical-align: middle;
-            font-size: $home-title-size;
-            color: $header-title-color;
-        }
-
-        #subtitle {
-            margin-left: $home-logo-size;
-            color: $header-subtitle-color;
-            font-size: $home-subtitle-size;
-            font-family: $header-subtitle-font-family;
-            margin-top: $home-subtitle-margin-top;
-            display: inline-block;
+        .btn-lg {
+          // line-height: ensure even-numbered height of button next to large input
+          @include button-size($padding-large-vertical * 1.2, $padding-large-horizontal * 1.2,
+                  $font-size-large * 1.2, $line-height-large * 1.2, 0);
         }
     }
 }
