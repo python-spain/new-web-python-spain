@@ -4,6 +4,11 @@ $brand-info: #a6a2a2;
 
 $font-family-sans-serif: 'Roboto';
 
+$navbar-default-color: darken(#fff, 10%);
+$navbar-default-link-color: $navbar-default-color;
+$navbar-default-link-active-color: lighten($navbar-default-link-color, 5%);
+$navbar-default-bg: lighten(#847577, 10%);
+
 /* Icons */
 $mdi-font-path: '../libs/mdi/fonts/';
 
@@ -18,7 +23,7 @@ $home-logo-size: 96px;
 $home-title-size: 75px;
 $home-subtitle-size: 18px;
 $home-subtitle-margin-top: -15px;
-$home-header-padding: 30px;
+$home-header-padding: 40px;
 //$home-right-buttons-margin-left: 80px;
 $home-right-buttons-margin: 20px;
 $home-right-buttons-line-height: 120px;
