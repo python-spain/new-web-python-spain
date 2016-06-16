@@ -213,3 +213,11 @@ BOOTSTRAP3_THEME = 'pywebes'
 BOOTSTRAP3_COLS = 12
 BOOTSTRAP3_SIDEBAR_COLS = 4
 BOOTSTRAP3_MENU_TEMPLATE = 'cms_bs3_theme/menus/fluid-static-top-default.html'
+
+CMS_STYLE_NAMES = (
+    ('info', gettext("info")),
+    ('new', gettext("new")),
+    ('hint', gettext("hint")),
+    ('primary-background', gettext('Primary background')),
+    ('container', gettext('Container')),
+)

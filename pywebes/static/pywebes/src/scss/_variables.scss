@@ -8,6 +8,7 @@ $navbar-default-color: darken(#fff, 10%);
 $navbar-default-link-color: $navbar-default-color;
 $navbar-default-link-active-color: lighten($navbar-default-link-color, 5%);
 $navbar-default-bg: lighten(#847577, 10%);
+$navbar-margin-bottom: 0;
 
 /* Icons */
 $mdi-font-path: '../libs/mdi/fonts/';
@@ -27,3 +28,6 @@ $home-header-padding: 40px;
 //$home-right-buttons-margin-left: 80px;
 $home-right-buttons-margin: 20px;
 $home-right-buttons-line-height: 120px;
+
+/* Extra styles */
+$primary-background: #e5e6e4;
