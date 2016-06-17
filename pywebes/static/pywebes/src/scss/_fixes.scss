@@ -1,0 +1,10 @@
+/* Bad boostrap style in code blocks */
+pre.highlight-js {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+
+    code {
+        border-radius: 3px;
+    }
+}

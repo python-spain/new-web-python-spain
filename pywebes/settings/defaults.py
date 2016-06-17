@@ -143,6 +143,7 @@ INSTALLED_APPS = [
     'pywebes',
 
     'cms_bs3_theme',
+    'djangocms_highlightjs',
 ]
 
 LANGUAGES = (
