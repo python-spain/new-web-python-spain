@@ -1,0 +1,8 @@
+{% extends "registration/base.html" %}
+{% load bootstrap3 i18n %}
+
+{% block main %}
+    <h1>{% trans "Login" %}</h1>
+    {% bootstrap_form form %}
+    {% bootstrap_button "submit" %}
+{% endblock %}
