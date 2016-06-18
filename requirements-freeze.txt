@@ -12,6 +12,7 @@ dj-database-url==0.4.1
 Django==1.9.7
 django-appconf==1.0.2
 django-appdata==0.1.5
+django-bootstrap3==7.0.1
 django-classy-tags==0.7.2
 django-cms==3.2.5
 django-filer==1.2.0

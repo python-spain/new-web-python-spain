@@ -146,6 +146,7 @@ INSTALLED_APPS = [
 
     'cms_bs3_theme',
     'djangocms_highlightjs',
+    'bootstrap3',
 
     'aldryn_apphooks_config',
     'aldryn_boilerplates',

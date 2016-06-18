@@ -1,13 +1,8 @@
 {% extends "registration/base.html" %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    {% block main %}
-        {{ form }}
-    {% endblock %}
-</body>
-</html>
+{% load bootstrap3 i18n %}
+
+{% block main %}
+    <h1>{% trans "Register" %}</h1>
+    {% bootstrap_form form %}
+    {% bootstrap_button "submit" %}
+{% endblock %}
