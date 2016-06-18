@@ -1,5 +1,6 @@
 aldryn-apphooks-config==0.2.7
 aldryn-boilerplates==0.7.4
+aldryn-bootstrap3==1.0.10
 aldryn-categories==1.0.3
 aldryn-common==1.0.3
 aldryn-newsblog==1.2.2
@@ -15,6 +16,7 @@ django-appdata==0.1.5
 django-bootstrap3==7.0.1
 django-classy-tags==0.7.2
 django-cms==3.2.5
+django-durationfield==0.5.2
 django-filer==1.2.0
 django-formtools==1.0
 django-jsonfield==0.9.19

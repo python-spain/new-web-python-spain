@@ -105,6 +105,7 @@ TEMPLATES = [
 MIDDLEWARE_CLASSES = [
     'cms.middleware.utils.ApphookReloadMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.contrib.sites.middleware.CurrentSiteMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -118,6 +119,7 @@ MIDDLEWARE_CLASSES = [
 ]
 
 INSTALLED_APPS = [
+    # Initial DjangoCMS dependencies
     'djangocms_admin_style',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -144,10 +146,13 @@ INSTALLED_APPS = [
     'reversion',
     'pywebes',
 
+    # Extra dependencies
     'cms_bs3_theme',
     'djangocms_highlightjs',
     'bootstrap3',
+    'aldryn_bootstrap3',
 
+    # Aldryn Newsblog dependencied
     'aldryn_apphooks_config',
     'aldryn_boilerplates',
     'aldryn_categories',
@@ -161,6 +166,8 @@ INSTALLED_APPS = [
     'parler',
     'sortedm2m',
     'taggit',
+
+
 ]
 
 LANGUAGES = (
@@ -245,6 +252,7 @@ CMS_STYLE_NAMES = (
     ('new', gettext("new")),
     ('hint', gettext("hint")),
     ('primary-background', gettext('Primary background')),
+    ('secondary-background', gettext('Secondary background')),
     ('container', gettext('Container')),
 )
 

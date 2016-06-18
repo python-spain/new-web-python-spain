@@ -10,8 +10,15 @@ $navbar-default-link-active-color: lighten($navbar-default-link-color, 5%);
 $navbar-default-bg: lighten(#847577, 10%);
 $navbar-margin-bottom: 0;
 
+$btn-border-radius-base: 0;
+$btn-border-radius-large: 0;
+$btn-border-radius-small: 0;
+
+$grid-columns: 24;
+
 /* Icons */
 $mdi-font-path: '../libs/mdi/fonts/';
+$icon-font-path: "../libs/bootstrap-sass/assets/fonts/bootstrap/";
 
 /* Header */
 $header-title-font-family: 'flux';
@@ -31,3 +38,6 @@ $home-right-buttons-line-height: 120px;
 
 /* Extra styles */
 $primary-background: #e5e6e4;
+$primary-background-color: auto;
+$secondary-background: #847577;
+$secondary-background-color: darken(#fff, 5%);
