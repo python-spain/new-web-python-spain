@@ -88,10 +88,12 @@ TEMPLATES = [
                 'django.core.context_processors.static',
                 'cms.context_processors.cms_settings',
 
+                'aldryn_boilerplates.context_processors.boilerplate',
                 'cms_bs3_theme.context_processors.settings',
             ],
             'loaders': [
                 'django.template.loaders.filesystem.Loader',
+                'aldryn_boilerplates.template_loaders.AppDirectoriesLoader',
                 'django.template.loaders.app_directories.Loader',
                 'django.template.loaders.eggs.Loader'
             ],
@@ -144,6 +146,20 @@ INSTALLED_APPS = [
 
     'cms_bs3_theme',
     'djangocms_highlightjs',
+
+    'aldryn_apphooks_config',
+    'aldryn_boilerplates',
+    'aldryn_categories',
+    'aldryn_common',
+    'aldryn_newsblog',
+    'aldryn_people',
+    'aldryn_reversion',
+    'aldryn_translation_tools',
+    'easy_thumbnails',
+    'filer',
+    'parler',
+    'sortedm2m',
+    'taggit',
 ]
 
 LANGUAGES = (
@@ -210,6 +226,14 @@ MIGRATION_MODULES = {
     
 }
 
+THUMBNAIL_PROCESSORS = (
+    'easy_thumbnails.processors.colorspace',
+    'easy_thumbnails.processors.autocrop',
+    'filer.thumbnail_processors.scale_and_crop_with_subject_location',
+    'easy_thumbnails.processors.filters',
+)
+
+
 BOOTSTRAP3_THEME = 'pywebes'
 BOOTSTRAP3_COLS = 12
 BOOTSTRAP3_SIDEBAR_COLS = 4
@@ -222,3 +246,5 @@ CMS_STYLE_NAMES = (
     ('primary-background', gettext('Primary background')),
     ('container', gettext('Container')),
 )
+
+ACCOUNT_ACTIVATION_DAYS = 7

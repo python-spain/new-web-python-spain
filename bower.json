@@ -1,0 +1,27 @@
+{
+  "name": "new-web-python-spain",
+  "homepage": "https://github.com/python-spain/new-web-python-spain",
+  "authors": [
+    "Nekmo <contacto@nekmo.com>"
+  ],
+  "description": "Python Spain Web Assets",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "python",
+    "spain"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "pywebes/static/pywebes/src/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "boostrap-sass#^3.3.6"
+  }
+}
