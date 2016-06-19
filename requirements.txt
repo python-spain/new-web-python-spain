@@ -24,6 +24,7 @@ six
 jsonfield
 djangocms-highlightjs
 django-registration
+aldryn-bootstrap3
 aldryn-newsblog
 django-bootstrap3
 django-phonenumber-field
