@@ -11515,6 +11515,7 @@ pre.highlight-js {
   background-color: transparent;
   border: 0; }
   pre.highlight-js code {
-    border-radius: 3px; }
+    border-radius: 3px;
+    font-family: 'DejaVu Sans Mono', monospace; }
 
 /*# sourceMappingURL=pywebes.css.map */

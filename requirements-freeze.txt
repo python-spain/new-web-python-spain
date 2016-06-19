@@ -9,6 +9,8 @@ aldryn-reversion==1.0.9
 aldryn-translation-tools==0.2.1
 Babel==2.3.4
 backport-collections==0.1
+cmsplugin-carousel==0.0.1
+cmsplugin-filer==1.0.1
 dj-database-url==0.4.1
 Django==1.9.7
 django-appconf==1.0.2
@@ -21,6 +23,7 @@ django-filer==1.2.0
 django-formtools==1.0
 django-jsonfield==0.9.19
 django-mptt==0.8.4
+django-orderedmodel==0.1.5
 django-parler==1.6.4
 django-phonenumber-field==1.1.0
 django-polymorphic==0.8.1
@@ -34,6 +37,7 @@ django-treebeard==4.0.1
 djangocms-admin-style==1.2.2
 djangocms-column==1.6.0
 -e git+git@github.com:Nekmo/djangocms-comments.git@9fb4eb6f2c5f06978bb207eecac4829fb28e2c1d#egg=djangocms_comments-master
+-e git+git://github.com/MagicSolutions/cmsplugin-carousel.git --process-dependency-links
 djangocms-file==1.0
 djangocms-googlemap==0.4.0
 djangocms-highlightjs==0.5.0

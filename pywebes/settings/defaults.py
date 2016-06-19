@@ -152,6 +152,7 @@ INSTALLED_APPS = [
     'bootstrap3',
     'aldryn_bootstrap3',
 
+
     # Aldryn Newsblog dependencied
     'aldryn_apphooks_config',
     'aldryn_boilerplates',
