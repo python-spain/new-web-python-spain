@@ -22,6 +22,7 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap-sass": "boostrap-sass#^3.3.6"
+    "bootstrap-sass": "boostrap-sass#^3.3.6",
+    "mdi": "^1.6.50"
   }
 }
