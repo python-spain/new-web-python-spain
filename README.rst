@@ -14,7 +14,7 @@ How to start
 1. Create a virtual environment with Python3
 2. Execute: ::
    
-    pip install -r requirements
+    pip install -r requirements-freeze.txt
 
 3. Execute: ::
 
