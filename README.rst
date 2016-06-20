@@ -5,6 +5,8 @@ This is the code for the new Python Spain website. The main goal is to creat a m
 
 We're in the first stages of developing. Contributors wellcome.
 
+This project is a Python3 project.
+
 
 How to start
 ------------
@@ -28,7 +30,43 @@ How to start
 How to contribute
 -----------------
 
-The best way to contribute is to create a github fork and make pull requests
+The best way to contribute is to create a github fork and make pull requests.
+
+1. Create a branch for each feature you want to work on. So from master ::
+
+   git checkout -b my_cool_feature
+
+2. Work on it, make as many changes as you like. Do not forget to add the commit comments. Please read http://chris.beams.io/posts/git-commit/ if you're not sure about how to write good commit messages.
+
+3. Once you're ready with your work you can make a rebase if it makes the work clearer ::
+
+   git rebase -i
+
+4. Then you can make a push ::
+
+   git push
+
+5. And create a pull request from github
+
+
+Getting changes
+~~~~~~~~~~~~~~~
+
+To obtain the changes from the main repo first you have to add the remote to your project ::
+
+    git remote add upstream https://github.com/python-spain/new-web-python-spain
+
+check that the upstream is there with ::
+
+    git remote -v
+
+if the python-spain report appears in the upstream section you should be ready, so you can make ::
+
+    git fetch upstream
+    git merge upstream/master
+
+to get the new changes from the master report. Now you're ready to start again
+
 
 Development hints
 -----------------
@@ -37,4 +75,9 @@ If you're devoping and want to avoid adding the settins parameter try: ::
 
     export DJANGO_SETTINGS_MODULE=pywebes.settings.develop
 
+We have added the django-extension tools to the project, so you can run ::
+
+    python manage.py shell_plus
+
+to get a shell command with all the models imported.
 
