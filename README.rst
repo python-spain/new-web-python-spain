@@ -44,7 +44,7 @@ The best way to contribute is to create a github fork and make pull requests.
 
 4. Then you can make a push ::
 
-   git push
+   git push -u origin my_cool_feature
 
 5. And create a pull request from github
 
