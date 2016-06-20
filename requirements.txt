@@ -24,10 +24,12 @@ six
 jsonfield
 djangocms-highlightjs
 django-registration
+aldryn-bootstrap3
 aldryn-newsblog
-django-bootstrap3
+django-bootstrap3==1.0.10
 django-phonenumber-field
-
+django-extensions==1.6.7
+django-bootstrap3-sass==3.3.2.2
 
 -e git+git@github.com:Nekmo/djangocms-bs3-theme.git@master#egg=djangocms_bs3_theme-master
 -e git+git@github.com:Nekmo/djangocms-comments.git@master#egg=project_name-master
