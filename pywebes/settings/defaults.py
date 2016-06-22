@@ -151,6 +151,7 @@ INSTALLED_APPS = [
     'djangocms_highlightjs',
     'bootstrap3',
     'aldryn_bootstrap3',
+    'cities',
 
 
     # Aldryn Newsblog dependencied
@@ -168,6 +169,11 @@ INSTALLED_APPS = [
     'sortedm2m',
     'taggit',
 
+    # Own modules
+    'cms_contact',
+    'cms_people',
+    'cms_association',
+    'cms_event',
 
 ]
 
