@@ -7,3 +7,5 @@ from .defaults import *
 DEBUG = True
 BOOTSTRAP3_FORCE_SRC = True
 INSTALLED_APPS += ['django_extensions', ]
+
+SPATIALITE_LIBRARY_PATH = 'mod_spatialite'
