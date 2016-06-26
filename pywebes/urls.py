@@ -16,6 +16,7 @@ urlpatterns = i18n_patterns('',
         {'sitemaps': {'cmspages': CMSSitemap}}),
     url(r'^select2/', include('django_select2.urls')),
     url(r'^accounts/', include('registration.backends.hmac.urls')),
+    url(r'^profile/', include('cms_people.urls.profile')),
     url(r'^', include('cms.urls')),
 )
 

@@ -15,14 +15,22 @@ How to start
 2. Execute: ::
    
     pip install -r requirements-freeze.txt
+3. Install postgres with PostGIS support: https://docs.djangoproject.com/es/1.9/ref/contrib/gis/install/postgis/
+4. Execute migrations or use a dump::
 
-3. Execute: ::
+    ./manage.py migrate
+
+5. You must run django cities if you do not use a dump::
+
+    ./manage.py cities --import=all
+    
+6. Execute: ::
 
    python manage.py runserver --settings pywebes.settings.develop
 
-4. Install bower (if its not on your system)
+7. Install bower (if its not on your system)
 
-4. Execute ::
+8. Execute ::
 
    bower install
 
