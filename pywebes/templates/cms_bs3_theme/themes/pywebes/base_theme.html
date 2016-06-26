@@ -8,15 +8,16 @@
     {% else %}
         <link rel="stylesheet" href="{% static 'pywebes/dist/css/pywebes.css' %}">
     {% endif %}
+
 {% endblock %}
 
 {% block bs3_theme_js %}
     {% if bs3_conf.BOOTSTRAP3_FORCE_SRC %}
-      <script src="{% static 'pywebes/src/libs/jquery/dist/jquery.js' %}"></script>
-      <script
+      <script type="text/javascript" src="{% static 'pywebes/src/libs/jquery/dist/jquery.js' %}"></script>
+      <script type="text/javascript"
               src="{% static 'pywebes/src/libs/bootstrap-sass/assets/javascripts/bootstrap.js' %}">
       </script>
     {% else %}
-      <script src="{% static 'pywebes/dist/js/jq-bs3.min.js' %}"></script>
+      <script type="text/javascript" src="{% static 'pywebes/dist/js/jq-bs3.min.js' %}"></script>
     {% endif %}
 {% endblock %}

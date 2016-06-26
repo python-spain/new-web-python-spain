@@ -154,6 +154,7 @@ INSTALLED_APPS = [
     'bootstrap3',
     'aldryn_bootstrap3',
     'cities',
+    'django_select2',
 
 
     # Aldryn Newsblog dependencied
