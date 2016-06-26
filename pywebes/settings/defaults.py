@@ -140,7 +140,7 @@ INSTALLED_APPS = [
     'djangocms_file',
     'djangocms_googlemap',
     'djangocms_inherit',
-    'djangocms_link',
+    # 'djangocms_link',
     'djangocms_picture',
     'djangocms_teaser',
     'djangocms_video',
