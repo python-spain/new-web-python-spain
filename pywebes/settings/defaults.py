@@ -278,3 +278,5 @@ CMS_STYLE_NAMES = (
 )
 
 ACCOUNT_ACTIVATION_DAYS = 7
+
+SELECT2_JS = 'pywebes/src/libs/select2/dist/js/select2.js'
