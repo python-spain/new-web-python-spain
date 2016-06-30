@@ -12,7 +12,7 @@ from fabric.contrib.files import exists
 
 
 try:
-    from nekmocom.secrets import deploy_settings
+    from pywebes.secrets import deploy_settings
 except ImportError:
     deploy_settings = None
 
@@ -28,7 +28,7 @@ REMOTE_BACKUPS_DIR = '~/Backups'
 STATIC_FILES_DIR = '~/Static'
 MAX_DATABASE_BACKUPS = 10
 REQUIREMENTS_FILE = 'requirements.txt'
-SETTINGS = 'nekmocom.settings.production'
+SETTINGS = 'pywebes.settings.production'
 MANAGE_PRE_ARGUMENTS = 'PYTHONPATH=::$PWD'
 MANAGE_ARGUMENTS = '--settings {} --noinput'.format(SETTINGS)
 # http://www.postgresql.org/docs/8.2/static/sql-alterschema.html
@@ -39,7 +39,9 @@ GRANT ALL ON SCHEMA public TO postgres;
 GRANT ALL ON SCHEMA public TO public;
 COMMENT ON SCHEMA public IS 'standard public schema';
 """
-START_VIRTUALENV = 'source `which virtualenvwrapper.sh`; workon {}'.format(REMOTE_PROJECT)
+START_VIRTUALENV = 'source {}; workon {}'.format(getattr(deploy_settings, 'VIRTUALENVWRAPPER',
+                                                         '`which virtualenvwrapper.sh`'),
+                                                 REMOTE_PROJECT)
 
 
 def _nondirty_git():
