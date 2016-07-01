@@ -27,7 +27,7 @@ MANAGE = 'manage.py'
 REMOTE_BACKUPS_DIR = '~/Backups'
 STATIC_FILES_DIR = '~/Static'
 MAX_DATABASE_BACKUPS = 10
-REQUIREMENTS_FILE = 'requirements.txt'
+REQUIREMENTS_FILE = 'requirements-freeze.txt'
 SETTINGS = 'pywebes.settings.production'
 MANAGE_PRE_ARGUMENTS = 'PYTHONPATH=::$PWD'
 MANAGE_ARGUMENTS = '--settings {} --noinput'.format(SETTINGS)
