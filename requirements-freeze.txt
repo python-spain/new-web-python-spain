@@ -36,7 +36,7 @@ django-taggit==0.19.1
 django-treebeard==4.0.1
 djangocms-admin-style==1.2.2
 djangocms-column==1.6.0
--e git+git@https://github.com/Nekmo/djangocms-comments.git@9fb4eb6f2c5f06978bb207eecac4829fb28e2c1d#egg=djangocms_comments-master
+-e git+https://github.com/Nekmo/djangocms-comments.git@9fb4eb6f2c5f06978bb207eecac4829fb28e2c1d#egg=djangocms_comments-master
 djangocms-file==1.0
 djangocms-googlemap==0.4.0
 djangocms-highlightjs==0.5.0
