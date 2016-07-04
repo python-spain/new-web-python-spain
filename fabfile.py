@@ -91,6 +91,7 @@ def _copy_database():
     put(dbfile, dbfile, mode="0600")
     local('rm "{}"'.format(dbfile))
     run('psql {} -c "{}"'.format(DATABASE, CLEAR_SQL))
+    # http://stackoverflow.com/questions/20427689/psql-invalid-command-n-while-restore-sql
     run('psql "{}" < {}'.format(DATABASE, dbfile))
     # run('rm "{}"'.format(dbfile))
 
