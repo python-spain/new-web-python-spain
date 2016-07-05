@@ -87,12 +87,12 @@ def _copy_database():
     dbfile = os.path.join(TEMPDIR, uuid4().hex) + '.dump'
     local('touch "{}"'.format(dbfile))
     local('chmod 600 "{}"'.format(dbfile))
-    local('pg_dump "{}" >> {}'.format(DATABASE, dbfile))
+    local('pg_dump -c -O -Fc "{}" -f {}'.format(DATABASE, dbfile))
     put(dbfile, dbfile, mode="0600")
     local('rm "{}"'.format(dbfile))
-    run('psql {} -c "{}"'.format(DATABASE, CLEAR_SQL))
+    # run('psql {} -c "{}"'.format(DATABASE, CLEAR_SQL))
     # http://stackoverflow.com/questions/20427689/psql-invalid-command-n-while-restore-sql
-    run('psql "{}" < {}'.format(DATABASE, dbfile))
+    run('pg_restore -c -O --role=pythones -d "{}" "{}"'.format(DATABASE, dbfile))
     # run('rm "{}"'.format(dbfile))
 
 
