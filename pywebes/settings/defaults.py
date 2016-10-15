@@ -239,7 +239,7 @@ DATABASES = {
 
 CITIES_FILES = {
     'city': {
-       'filenames': ['cities1000.zip'],  # http://download.geonames.org/export/dump/
+       'filenames': ['cities1000.zip', 'ES.zip'],  # http://download.geonames.org/export/dump/
        'urls':     ['http://download.geonames.org/export/dump/'+'{filename}']
     },
 }
@@ -279,7 +279,6 @@ ACCOUNT_ACTIVATION_DAYS = 7
 SELECT2_JS = 'pywebes/src/libs/select2/dist/js/select2.js'
 
 CITIES_POSTAL_CODES = ['ES']
-
 
 # Bootstrap 3
 BOOTSTRAP3 = {
