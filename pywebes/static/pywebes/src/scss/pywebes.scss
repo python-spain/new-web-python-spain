@@ -8,3 +8,19 @@
 @import "home";
 @import "extra_styles";
 @import "fixes";
+
+.input-group-btn > .btn {
+    border-radius: $border-radius-base;
+
+  &:not(:first-child):not(:last-child) {
+    border-radius: 0;
+  }
+  &:first-child:not(:last-child) {
+    @include border-top-radius($border-radius-base);
+    @include border-bottom-radius(0);
+  }
+  &:last-child:not(:first-child) {
+    @include border-top-radius(0);
+    @include border-bottom-radius($border-radius-base);
+  }
+}
