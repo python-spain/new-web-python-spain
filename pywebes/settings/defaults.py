@@ -152,7 +152,7 @@ INSTALLED_APPS = [
     'aldryn_bootstrap3',
     'cities',
     'django_select2',
-
+    'djangoformsetjs',
 
     # Aldryn Newsblog dependencied
     'aldryn_apphooks_config',
