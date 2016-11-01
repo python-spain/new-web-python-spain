@@ -34,13 +34,7 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
-
-
-
-
 ROOT_URLCONF = 'pywebes.urls'
-
-
 
 
 # Internationalization
@@ -293,3 +287,6 @@ BOOTSTRAP3 = {
     'horizontal_label_class': 'col-md-6',
     'horizontal_field_class': 'col-md-18',
 }
+
+MAP_COORDS = (40.0074163, -1.7510756)
+MAP_ZOOM = 7
