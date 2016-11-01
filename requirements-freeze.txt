@@ -23,7 +23,9 @@ django-compressor==2.1
 django-durationfield==0.5.2
 django-extensions==1.6.7
 django-filer==1.2.5
+django-formset-js==0.5.0
 django-formtools==1.0
+django-jquery-js==2.1.4
 django-jsonfield==0.9.19
 django-libsass==0.7
 django-mptt==0.8.6
@@ -38,11 +40,11 @@ django-sortedm2m==1.3.2
 django-taggit==0.21.3
 django-treebeard==4.0.1
 djangocms-admin-style==1.2.5
-djangocms-association==0.1.0
+-e git+https://github.com/python-spain/djangocms-association.git@1a4f67cdc015ddb576714cc122ba6ecd82ab949f#egg=djangocms_association-master
 djangocms-attributes-field==0.1.1
--e git+git@github.com:Nekmo/djangocms-bs3-theme.git@7d32befe27e5a4823d2f9923d15f9d65241b2647#egg=djangocms_bs3_theme-master
+-e git+https://github.com/Nekmo/djangocms-bs3-theme.git@6392ab3aa7f936f03a6d8a4d42534616657e6bea#egg=djangocms_bs3_theme-master
 djangocms-column==1.7.0
--e git+git@github.com:Nekmo/djangocms-comments.git@a3bd08bafc5852f74a71caaa70382f7f064bf9f8#egg=djangocms_comments-master
+-e git+https://github.com/Nekmo/djangocms-comments.git@2fc23df2b99b397e52f95d385d64a1d79279bf94#egg=djangocms_comments-master
 djangocms-file==2.0.1
 djangocms-googlemap==0.5.2
 djangocms-highlightjs==0.5.0
@@ -70,6 +72,7 @@ pipdeptree==0.6.0
 psycopg2==2.6.1
 pycrypto==2.6.1
 python-dateutil==2.5.3
+python-memcached==1.58
 python-slugify==1.2.0
 pytz==2016.7
 rcssmin==1.0.6
