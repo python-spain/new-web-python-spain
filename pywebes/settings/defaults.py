@@ -231,6 +231,8 @@ DATABASES = {
     }
 }
 
+# CITIES_POSTAL_CODES = ['ES']
+# CITIES_LOCALES = ['en', 'und', 'es']
 CITIES_FILES = {
     'city': {
        'filenames': ['cities1000.zip', 'ES.zip'],  # http://download.geonames.org/export/dump/
@@ -240,7 +242,6 @@ CITIES_FILES = {
 #
 # CITIES_DATA_DIR = '/usr/share/geocities'  # Download here .zip files
 
-# CITIES_POSTAL_CODES = ['ES']
 
 MIGRATION_MODULES = {
     
