@@ -1,7 +1,8 @@
 new-web-python-spain
 ####################
 
-This is the code for the new Python Spain website. The main goal is to creat a management platform for the Python Spain association that can be easly customized to be used for other Python associations or more generic associations.
+This is the code for the new Python Spain website. The main goal is to creat a management platform for the Python Spain
+association that can be easly customized to be used for other Python associations or more generic associations.
 
 We're in the first stages of developing. Contributors wellcome.
 
