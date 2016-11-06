@@ -2,6 +2,32 @@
 {% load static i18n cms_tags %}
 
 
+{% block header %}
+    <div id="header">
+        <div class="container">
+            <div id="headline">
+                <div id="name-slogan">
+                    <div id="logo"></div>
+                    <h1 id="name">Python España</h1>
+                </div>
+            </div>
+            <div class="right pull-right col-md-7">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" type="button">
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        </button>
+                    </span>
+                </div><!-- /input-group -->
+            </div>
+        </div>
+    </div>
+    {% include bs3_conf.BOOTSTRAP3_MENU_TEMPLATE %}
+{% endblock %}
+
+
+
 {% block bs3_theme_css %}
     {% if bs3_conf.BOOTSTRAP3_FORCE_SRC %}
         <link rel="stylesheet" href="{% static 'pywebes/src/css/pywebes.css' %}">

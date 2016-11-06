@@ -4,10 +4,9 @@
 
 @import "fonts";
 @import "../libs/mdi/scss/materialdesignicons";
-@import "header";
-@import "home";
 @import "extra_styles";
 @import "fixes";
+@import "header";
 
 .input-group-btn > .btn {
     border-radius: $border-radius-base;
@@ -23,4 +22,8 @@
     @include border-top-radius(0);
     @include border-bottom-radius($border-radius-base);
   }
+}
+
+.tpl-home {
+    @import '_home.scss';
 }

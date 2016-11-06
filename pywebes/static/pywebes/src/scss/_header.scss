@@ -2,6 +2,7 @@
 @import "variables";
 @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/variables";
 
+
 #header {
     padding-top: $home-header-padding;
     padding-bottom: $home-header-padding;
@@ -42,6 +43,7 @@
     }
 
     #right-header {
+        // Right header in home
         display: inline-block;
         vertical-align: middle;
         line-height: $home-right-buttons-line-height;
@@ -55,6 +57,14 @@
           // line-height: ensure even-numbered height of button next to large input
           @include button-size($padding-large-vertical * 1.2, $padding-large-horizontal * 1.2,
                   $font-size-large * 1.2, $line-height-large * 1.2, 0);
+        }
+    }
+
+    .right {
+        // General right header
+        padding-top: 30px;
+        .form-control {
+            height: auto;
         }
     }
 }
