@@ -1,0 +1,31 @@
+{% load cms_tags menu_tags staticfiles i18n %}
+<div class="navbar-header">
+    <a class="navbar-brand" href="/">
+        {{ request.site.name|default:"Sitename" }}
+        <span class="sr-only">{{ request.site.name|default:"Python España" }}</span>
+        <!-- <img src="{% static "img/logo-main@print.png" %}"
+             alt="{{ request.site.name|default:"Sitename" }}" /> -->
+    </a>
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".js-navbar-header">
+        {% for row in 123|make_list %}<span class="icon-bar"></span>{% endfor %}
+    </button>
+</div>
+<div class="navbar-collapse collapse js-navbar-header">
+    <ul class="nav navbar-nav">
+        {% show_menu 0 1 100 100 "cms_bs3_theme/_menu.html" %}
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        {% if user.is_authenticated %}
+            <li>
+                <a href="{% url "profile_about" %}">
+                    {% blocktrans with username=user.username %}
+                        {{ username }} profile
+                    {% endblocktrans %}
+                </a>
+            </li>
+        {% else %}
+            <li><a href="{% url "registration_register" %}">{% trans "Register" %}</a></li>
+            <li><a href="{% url "auth_login" %}">{% trans "Login" %}</a></li>
+        {% endif %}
+    </ul>
+</div>
