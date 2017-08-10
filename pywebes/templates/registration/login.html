@@ -3,6 +3,9 @@
 
 {% block main %}
     <h1>{% trans "Login" %}</h1>
-    {% bootstrap_form form %}
-    {% bootstrap_button "submit" button_class="btn-primary" size="lg" %}
+    <form method="post">
+        {% bootstrap_form form %}
+        {% csrf_token %}
+        {% bootstrap_button "submit" button_class="btn-primary" size="lg" %}
+    </form>
 {% endblock %}
