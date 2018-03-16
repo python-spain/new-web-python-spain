@@ -1,6 +1,8 @@
 new-web-python-spain
 ####################
 
+*Note: This repository is deprecated, check out https://github.com/python-spain/web for the current web*
+
 This is the code for the new Python Spain website. The main goal is to creat a management platform for the Python Spain
 association that can be easly customized to be used for other Python associations or more generic associations.
 
